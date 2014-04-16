@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C137B28A18FC123B0081BC5A /* mitfactory_plugin_interface.h in Headers */ = {isa = PBXBuildFile; fileRef = C137B28918FC123B0081BC5A /* mitfactory_plugin_interface.h */; };
+		C137B28C18FC125B0081BC5A /* mitfactory_error.h in Headers */ = {isa = PBXBuildFile; fileRef = C137B28B18FC125B0081BC5A /* mitfactory_error.h */; };
+		C1408CC018FC45C9007B22FF /* mitfactory_plugin_elf.h in Headers */ = {isa = PBXBuildFile; fileRef = C1408CBF18FC45C9007B22FF /* mitfactory_plugin_elf.h */; };
+		C1408CC218FC464C007B22FF /* mitfactory_plugin_macho.h in Headers */ = {isa = PBXBuildFile; fileRef = C1408CC118FC464C007B22FF /* mitfactory_plugin_macho.h */; };
+		C1408CC418FC4656007B22FF /* mitfactory_plugin_pe.h in Headers */ = {isa = PBXBuildFile; fileRef = C1408CC318FC4656007B22FF /* mitfactory_plugin_pe.h */; };
+		C1408CC618FC4761007B22FF /* mitfactory_plugin_elf.c in Sources */ = {isa = PBXBuildFile; fileRef = C1408CC518FC4761007B22FF /* mitfactory_plugin_elf.c */; };
+		C1408CC818FC476C007B22FF /* mitfactory_plugin_macho.c in Sources */ = {isa = PBXBuildFile; fileRef = C1408CC718FC476C007B22FF /* mitfactory_plugin_macho.c */; };
+		C1408CCA18FC4780007B22FF /* mitfactory_plugin_pe.c in Sources */ = {isa = PBXBuildFile; fileRef = C1408CC918FC4780007B22FF /* mitfactory_plugin_pe.c */; };
+		C1408CCC18FC4A84007B22FF /* mitfactory_plugin_elf_error.c in Sources */ = {isa = PBXBuildFile; fileRef = C1408CCB18FC4A84007B22FF /* mitfactory_plugin_elf_error.c */; };
+		C1408CCE18FC4A96007B22FF /* mitfactory_plugin_macho_error.c in Sources */ = {isa = PBXBuildFile; fileRef = C1408CCD18FC4A96007B22FF /* mitfactory_plugin_macho_error.c */; };
+		C1408CD018FC4AA0007B22FF /* mitfactory_plugin_pe_error.c in Sources */ = {isa = PBXBuildFile; fileRef = C1408CCF18FC4AA0007B22FF /* mitfactory_plugin_pe_error.c */; };
+		C1408CD218FC4AE8007B22FF /* mitfactory_plugin_elf_error.h in Headers */ = {isa = PBXBuildFile; fileRef = C1408CD118FC4AE8007B22FF /* mitfactory_plugin_elf_error.h */; };
+		C1408CD418FC4AF1007B22FF /* mitfactory_plugin_macho_error.h in Headers */ = {isa = PBXBuildFile; fileRef = C1408CD318FC4AF1007B22FF /* mitfactory_plugin_macho_error.h */; };
+		C1408CD618FC4AF8007B22FF /* mitfactory_plugin_pe_error.h in Headers */ = {isa = PBXBuildFile; fileRef = C1408CD518FC4AF8007B22FF /* mitfactory_plugin_pe_error.h */; };
+		C1408CD818FC649F007B22FF /* mitfactory_macho_object.h in Headers */ = {isa = PBXBuildFile; fileRef = C1408CD718FC649F007B22FF /* mitfactory_macho_object.h */; };
+		C1408CDA18FC64BB007B22FF /* mitfactory_macho_object.c in Sources */ = {isa = PBXBuildFile; fileRef = C1408CD918FC64BB007B22FF /* mitfactory_macho_object.c */; };
+		C1408CDC18FD2309007B22FF /* mitfactory_macho_spec.h in Headers */ = {isa = PBXBuildFile; fileRef = C1408CDB18FD2309007B22FF /* mitfactory_macho_spec.h */; };
+		C1F7691E18FE993200819115 /* mitfactory_error.c in Sources */ = {isa = PBXBuildFile; fileRef = C1F7691D18FE993200819115 /* mitfactory_error.c */; };
+		C1F7692118FE99CE00819115 /* plugins.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F7692018FE99CE00819115 /* plugins.h */; };
+		C1F7692318FE9DD100819115 /* mitfactory_context.c in Sources */ = {isa = PBXBuildFile; fileRef = C1F7692218FE9DD100819115 /* mitfactory_context.c */; };
+		C1F7692518FE9DDF00819115 /* mitfactory_context.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F7692418FE9DDF00819115 /* mitfactory_context.h */; };
+		C1F7692918FE9DF100819115 /* mitfactory.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F7692818FE9DF100819115 /* mitfactory.h */; };
+		C1F7692B18FEA53200819115 /* mitfactory_pe_object.c in Sources */ = {isa = PBXBuildFile; fileRef = C1F7692A18FEA53200819115 /* mitfactory_pe_object.c */; };
+		C1F7692D18FEA53A00819115 /* mitfactory_elf_object.c in Sources */ = {isa = PBXBuildFile; fileRef = C1F7692C18FEA53A00819115 /* mitfactory_elf_object.c */; };
+		C1F7693018FEA58600819115 /* mitfactory_elf_object.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F7692E18FEA58600819115 /* mitfactory_elf_object.h */; };
+		C1F7693118FEA58600819115 /* mitfactory_elf_spec.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F7692F18FEA58600819115 /* mitfactory_elf_spec.h */; };
+		C1F7693418FEA58E00819115 /* mitfactory_pe_object.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F7693218FEA58E00819115 /* mitfactory_pe_object.h */; };
+		C1F7693518FEA58E00819115 /* mitfactory_pe_spec.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F7693318FEA58E00819115 /* mitfactory_pe_spec.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C137B26118FBEC590081BC5A /* libmitfactory.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libmitfactory.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C137B28918FC123B0081BC5A /* mitfactory_plugin_interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mitfactory_plugin_interface.h; path = src/inc/mitfactory/mitfactory_plugin_interface.h; sourceTree = "<group>"; };
+		C137B28B18FC125B0081BC5A /* mitfactory_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mitfactory_error.h; path = src/inc/mitfactory/mitfactory_error.h; sourceTree = "<group>"; };
+		C1408CBF18FC45C9007B22FF /* mitfactory_plugin_elf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mitfactory_plugin_elf.h; path = src/inc/mitfactory/plugins/elf/mitfactory_plugin_elf.h; sourceTree = "<group>"; };
+		C1408CC118FC464C007B22FF /* mitfactory_plugin_macho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mitfactory_plugin_macho.h; path = src/inc/mitfactory/plugins/macho/mitfactory_plugin_macho.h; sourceTree = "<group>"; };
+		C1408CC318FC4656007B22FF /* mitfactory_plugin_pe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mitfactory_plugin_pe.h; path = src/inc/mitfactory/plugins/pe/mitfactory_plugin_pe.h; sourceTree = "<group>"; };
+		C1408CC518FC4761007B22FF /* mitfactory_plugin_elf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mitfactory_plugin_elf.c; path = src/plugins/elf/mitfactory_plugin_elf.c; sourceTree = "<group>"; };
+		C1408CC718FC476C007B22FF /* mitfactory_plugin_macho.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mitfactory_plugin_macho.c; path = src/plugins/macho/mitfactory_plugin_macho.c; sourceTree = "<group>"; };
+		C1408CC918FC4780007B22FF /* mitfactory_plugin_pe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mitfactory_plugin_pe.c; path = src/plugins/pe/mitfactory_plugin_pe.c; sourceTree = "<group>"; };
+		C1408CCB18FC4A84007B22FF /* mitfactory_plugin_elf_error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mitfactory_plugin_elf_error.c; path = src/plugins/elf/mitfactory_plugin_elf_error.c; sourceTree = "<group>"; };
+		C1408CCD18FC4A96007B22FF /* mitfactory_plugin_macho_error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mitfactory_plugin_macho_error.c; path = src/plugins/macho/mitfactory_plugin_macho_error.c; sourceTree = "<group>"; };
+		C1408CCF18FC4AA0007B22FF /* mitfactory_plugin_pe_error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mitfactory_plugin_pe_error.c; path = src/plugins/pe/mitfactory_plugin_pe_error.c; sourceTree = "<group>"; };
+		C1408CD118FC4AE8007B22FF /* mitfactory_plugin_elf_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mitfactory_plugin_elf_error.h; path = src/inc/mitfactory/plugins/elf/mitfactory_plugin_elf_error.h; sourceTree = "<group>"; };
+		C1408CD318FC4AF1007B22FF /* mitfactory_plugin_macho_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mitfactory_plugin_macho_error.h; path = src/inc/mitfactory/plugins/macho/mitfactory_plugin_macho_error.h; sourceTree = "<group>"; };
+		C1408CD518FC4AF8007B22FF /* mitfactory_plugin_pe_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mitfactory_plugin_pe_error.h; path = src/inc/mitfactory/plugins/pe/mitfactory_plugin_pe_error.h; sourceTree = "<group>"; };
+		C1408CD718FC649F007B22FF /* mitfactory_macho_object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mitfactory_macho_object.h; path = src/inc/mitfactory/plugins/macho/mitfactory_macho_object.h; sourceTree = "<group>"; };
+		C1408CD918FC64BB007B22FF /* mitfactory_macho_object.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mitfactory_macho_object.c; path = src/plugins/macho/mitfactory_macho_object.c; sourceTree = "<group>"; };
+		C1408CDB18FD2309007B22FF /* mitfactory_macho_spec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mitfactory_macho_spec.h; path = src/inc/mitfactory/plugins/macho/mitfactory_macho_spec.h; sourceTree = "<group>"; };
+		C1F7691D18FE993200819115 /* mitfactory_error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mitfactory_error.c; path = src/mitfactory_error.c; sourceTree = "<group>"; };
+		C1F7692018FE99CE00819115 /* plugins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = plugins.h; path = src/inc/mitfactory/plugins/plugins.h; sourceTree = "<group>"; };
+		C1F7692218FE9DD100819115 /* mitfactory_context.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mitfactory_context.c; path = src/mitfactory_context.c; sourceTree = "<group>"; };
+		C1F7692418FE9DDF00819115 /* mitfactory_context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mitfactory_context.h; path = src/inc/mitfactory/mitfactory_context.h; sourceTree = "<group>"; };
+		C1F7692818FE9DF100819115 /* mitfactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mitfactory.h; path = src/inc/mitfactory/mitfactory.h; sourceTree = "<group>"; };
+		C1F7692A18FEA53200819115 /* mitfactory_pe_object.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mitfactory_pe_object.c; path = src/plugins/pe/mitfactory_pe_object.c; sourceTree = "<group>"; };
+		C1F7692C18FEA53A00819115 /* mitfactory_elf_object.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mitfactory_elf_object.c; path = src/plugins/elf/mitfactory_elf_object.c; sourceTree = "<group>"; };
+		C1F7692E18FEA58600819115 /* mitfactory_elf_object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mitfactory_elf_object.h; path = src/inc/mitfactory/plugins/elf/mitfactory_elf_object.h; sourceTree = "<group>"; };
+		C1F7692F18FEA58600819115 /* mitfactory_elf_spec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mitfactory_elf_spec.h; path = src/inc/mitfactory/plugins/elf/mitfactory_elf_spec.h; sourceTree = "<group>"; };
+		C1F7693218FEA58E00819115 /* mitfactory_pe_object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mitfactory_pe_object.h; path = src/inc/mitfactory/plugins/pe/mitfactory_pe_object.h; sourceTree = "<group>"; };
+		C1F7693318FEA58E00819115 /* mitfactory_pe_spec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mitfactory_pe_spec.h; path = src/inc/mitfactory/plugins/pe/mitfactory_pe_spec.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C137B25E18FBEC590081BC5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C137B25818FBEC580081BC5A = {
+			isa = PBXGroup;
+			children = (
+				C137B26818FBED320081BC5A /* inc */,
+				C1408CBB18FC452C007B22FF /* plugins */,
+				C1F7692218FE9DD100819115 /* mitfactory_context.c */,
+				C1F7691D18FE993200819115 /* mitfactory_error.c */,
+				C137B26218FBEC590081BC5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C137B26218FBEC590081BC5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C137B26118FBEC590081BC5A /* libmitfactory.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C137B26818FBED320081BC5A /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				C137B26918FBED3B0081BC5A /* mitfactory */,
+			);
+			name = inc;
+			sourceTree = "<group>";
+		};
+		C137B26918FBED3B0081BC5A /* mitfactory */ = {
+			isa = PBXGroup;
+			children = (
+				C1F7691F18FE999400819115 /* plugins */,
+				C1F7692418FE9DDF00819115 /* mitfactory_context.h */,
+				C137B28B18FC125B0081BC5A /* mitfactory_error.h */,
+				C137B28918FC123B0081BC5A /* mitfactory_plugin_interface.h */,
+				C1F7692818FE9DF100819115 /* mitfactory.h */,
+			);
+			name = mitfactory;
+			sourceTree = "<group>";
+		};
+		C1408CB818FC44FA007B22FF /* macho */ = {
+			isa = PBXGroup;
+			children = (
+				C1408CD718FC649F007B22FF /* mitfactory_macho_object.h */,
+				C1408CDB18FD2309007B22FF /* mitfactory_macho_spec.h */,
+				C1408CD318FC4AF1007B22FF /* mitfactory_plugin_macho_error.h */,
+				C1408CC118FC464C007B22FF /* mitfactory_plugin_macho.h */,
+			);
+			name = macho;
+			sourceTree = "<group>";
+		};
+		C1408CB918FC4500007B22FF /* elf */ = {
+			isa = PBXGroup;
+			children = (
+				C1F7692E18FEA58600819115 /* mitfactory_elf_object.h */,
+				C1F7692F18FEA58600819115 /* mitfactory_elf_spec.h */,
+				C1408CD118FC4AE8007B22FF /* mitfactory_plugin_elf_error.h */,
+				C1408CBF18FC45C9007B22FF /* mitfactory_plugin_elf.h */,
+			);
+			name = elf;
+			sourceTree = "<group>";
+		};
+		C1408CBA18FC4505007B22FF /* pe */ = {
+			isa = PBXGroup;
+			children = (
+				C1F7693218FEA58E00819115 /* mitfactory_pe_object.h */,
+				C1F7693318FEA58E00819115 /* mitfactory_pe_spec.h */,
+				C1408CD518FC4AF8007B22FF /* mitfactory_plugin_pe_error.h */,
+				C1408CC318FC4656007B22FF /* mitfactory_plugin_pe.h */,
+			);
+			name = pe;
+			sourceTree = "<group>";
+		};
+		C1408CBB18FC452C007B22FF /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				C1408CBD18FC453D007B22FF /* elf */,
+				C1408CBC18FC4539007B22FF /* macho */,
+				C1408CBE18FC4542007B22FF /* pe */,
+			);
+			name = plugins;
+			sourceTree = "<group>";
+		};
+		C1408CBC18FC4539007B22FF /* macho */ = {
+			isa = PBXGroup;
+			children = (
+				C1408CD918FC64BB007B22FF /* mitfactory_macho_object.c */,
+				C1408CCD18FC4A96007B22FF /* mitfactory_plugin_macho_error.c */,
+				C1408CC718FC476C007B22FF /* mitfactory_plugin_macho.c */,
+			);
+			name = macho;
+			sourceTree = "<group>";
+		};
+		C1408CBD18FC453D007B22FF /* elf */ = {
+			isa = PBXGroup;
+			children = (
+				C1F7692C18FEA53A00819115 /* mitfactory_elf_object.c */,
+				C1408CCB18FC4A84007B22FF /* mitfactory_plugin_elf_error.c */,
+				C1408CC518FC4761007B22FF /* mitfactory_plugin_elf.c */,
+			);
+			name = elf;
+			sourceTree = "<group>";
+		};
+		C1408CBE18FC4542007B22FF /* pe */ = {
+			isa = PBXGroup;
+			children = (
+				C1F7692A18FEA53200819115 /* mitfactory_pe_object.c */,
+				C1408CCF18FC4AA0007B22FF /* mitfactory_plugin_pe_error.c */,
+				C1408CC918FC4780007B22FF /* mitfactory_plugin_pe.c */,
+			);
+			name = pe;
+			sourceTree = "<group>";
+		};
+		C1F7691F18FE999400819115 /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				C1408CB918FC4500007B22FF /* elf */,
+				C1408CB818FC44FA007B22FF /* macho */,
+				C1408CBA18FC4505007B22FF /* pe */,
+				C1F7692018FE99CE00819115 /* plugins.h */,
+			);
+			name = plugins;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C137B25F18FBEC590081BC5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C137B28C18FC125B0081BC5A /* mitfactory_error.h in Headers */,
+				C1408CDC18FD2309007B22FF /* mitfactory_macho_spec.h in Headers */,
+				C1408CD218FC4AE8007B22FF /* mitfactory_plugin_elf_error.h in Headers */,
+				C1408CD618FC4AF8007B22FF /* mitfactory_plugin_pe_error.h in Headers */,
+				C1F7692518FE9DDF00819115 /* mitfactory_context.h in Headers */,
+				C1F7693018FEA58600819115 /* mitfactory_elf_object.h in Headers */,
+				C1F7693118FEA58600819115 /* mitfactory_elf_spec.h in Headers */,
+				C1F7692118FE99CE00819115 /* plugins.h in Headers */,
+				C1F7693418FEA58E00819115 /* mitfactory_pe_object.h in Headers */,
+				C1408CC418FC4656007B22FF /* mitfactory_plugin_pe.h in Headers */,
+				C1F7693518FEA58E00819115 /* mitfactory_pe_spec.h in Headers */,
+				C137B28A18FC123B0081BC5A /* mitfactory_plugin_interface.h in Headers */,
+				C1408CD818FC649F007B22FF /* mitfactory_macho_object.h in Headers */,
+				C1F7692918FE9DF100819115 /* mitfactory.h in Headers */,
+				C1408CD418FC4AF1007B22FF /* mitfactory_plugin_macho_error.h in Headers */,
+				C1408CC018FC45C9007B22FF /* mitfactory_plugin_elf.h in Headers */,
+				C1408CC218FC464C007B22FF /* mitfactory_plugin_macho.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C137B26018FBEC590081BC5A /* libmitfactory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C137B26518FBEC590081BC5A /* Build configuration list for PBXNativeTarget "libmitfactory" */;
+			buildPhases = (
+				C137B25D18FBEC590081BC5A /* Sources */,
+				C137B25E18FBEC590081BC5A /* Frameworks */,
+				C137B25F18FBEC590081BC5A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libmitfactory;
+			productName = libmitfactory;
+			productReference = C137B26118FBEC590081BC5A /* libmitfactory.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C137B25918FBEC580081BC5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Botswana Ltd.";
+			};
+			buildConfigurationList = C137B25C18FBEC580081BC5A /* Build configuration list for PBXProject "libmitfactory" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C137B25818FBEC580081BC5A;
+			productRefGroup = C137B26218FBEC590081BC5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C137B26018FBEC590081BC5A /* libmitfactory */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C137B25D18FBEC590081BC5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1408CCE18FC4A96007B22FF /* mitfactory_plugin_macho_error.c in Sources */,
+				C1408CDA18FC64BB007B22FF /* mitfactory_macho_object.c in Sources */,
+				C1408CD018FC4AA0007B22FF /* mitfactory_plugin_pe_error.c in Sources */,
+				C1F7692B18FEA53200819115 /* mitfactory_pe_object.c in Sources */,
+				C1408CCC18FC4A84007B22FF /* mitfactory_plugin_elf_error.c in Sources */,
+				C1F7692D18FEA53A00819115 /* mitfactory_elf_object.c in Sources */,
+				C1408CC818FC476C007B22FF /* mitfactory_plugin_macho.c in Sources */,
+				C1408CC618FC4761007B22FF /* mitfactory_plugin_elf.c in Sources */,
+				C1F7692318FE9DD100819115 /* mitfactory_context.c in Sources */,
+				C1408CCA18FC4780007B22FF /* mitfactory_plugin_pe.c in Sources */,
+				C1F7691E18FE993200819115 /* mitfactory_error.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C137B26318FBEC590081BC5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C137B26418FBEC590081BC5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C137B26618FBEC590081BC5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				EXECUTABLE_PREFIX = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = ./src/inc;
+			};
+			name = Debug;
+		};
+		C137B26718FBEC590081BC5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				EXECUTABLE_PREFIX = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = ./src/inc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C137B25C18FBEC580081BC5A /* Build configuration list for PBXProject "libmitfactory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C137B26318FBEC590081BC5A /* Debug */,
+				C137B26418FBEC590081BC5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C137B26518FBEC590081BC5A /* Build configuration list for PBXNativeTarget "libmitfactory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C137B26618FBEC590081BC5A /* Debug */,
+				C137B26718FBEC590081BC5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C137B25918FBEC580081BC5A /* Project object */;
+}

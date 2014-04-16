@@ -1,0 +1,4 @@
+#ifndef MITFACTORY_PLUGINS_H
+    #define MITFACTORY_PLUGINS_H
+
+#endif
